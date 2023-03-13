@@ -1,11 +1,18 @@
 ////////// variables declaration
 
+//////buttons
 const btnConvert = document.getElementById("btnConvert");
 const btnClean = document.getElementById("btnClean");
 
+/////temperatures
 let celsius = document.querySelector(".celsius-value");
 let fahrenheit = document.querySelector(".fahrenheit-value");
 let kelvin = document.querySelector(".kelvin-value");
+
+/////else statement when not entering any number
+const container = document.querySelector(".container");
+let span = document.createElement("span");
+container.appendChild(span);
 
 
 ///////// btnConvert function
@@ -33,6 +40,6 @@ btnConvert.addEventListener('click', () => {
     fahrenheit.value = fahrenheit.textContent = fahrenheitValue.toFixed(1) + " °F"
 
   } else {
-    
+    span.textContent = "Please, enter a temperature";
   }
 }) 
