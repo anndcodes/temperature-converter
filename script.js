@@ -43,3 +43,12 @@ btnConvert.addEventListener('click', () => {
     span.textContent = "Please, enter a temperature";
   }
 }) 
+
+////////// btnClean function
+
+btnClean.addEventListener("click", () => {
+  celsius.value = "";
+  fahrenheit.value = "";
+  kelvin.value = "";
+  span.textContent = "";
+})
