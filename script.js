@@ -2,7 +2,7 @@
 
 //////buttons
 const btnConvert = document.getElementById("btnConvert");
-const btnClean = document.getElementById("btnClean");
+const btnClear = document.getElementById("btnClear");
 
 /////temperatures
 let celsius = document.querySelector(".celsius-value");
@@ -44,9 +44,9 @@ btnConvert.addEventListener('click', () => {
   }
 }) 
 
-////////// btnClean function
+////////// btnClear function
 
-btnClean.addEventListener("click", () => {
+btnClear.addEventListener("click", () => {
   celsius.value = "";
   fahrenheit.value = "";
   kelvin.value = "";

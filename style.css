@@ -133,15 +133,15 @@ button {
 }
 
 /* ----- clean button ------ */
-#btnClean {
+#btnClear {
   color: var(--grey-grey);
 }
 
-#btnClean:hover { 
+#btnClear:hover { 
   color: var(--purple);
  }
 
-#btnClean:active {
+#btnClear:active {
   box-shadow: inset .2rem .2rem .5rem var(--gray-light), 
               inset -.2rem -.2rem .5rem var(--white);
 }
